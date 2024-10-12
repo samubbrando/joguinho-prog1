@@ -7,6 +7,7 @@ wasd = ["w", "s", "a", "d"]
 def settings(scr):
     scr.clear()
     curses.curs_set(0)
+    scr.nodelay(True)
 
     max_height = curses.LINES
     max_width = curses.COLS
